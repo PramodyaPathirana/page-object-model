@@ -1,2 +1,4 @@
+com\actitime\qa\testcases\UsersPageTest.class
+com\actitime\qa\testcases\ReportPageTest.class
 com\actitime\qa\testcases\HomePageTest.class
 com\actitime\qa\testcases\LogonPageTest.class

@@ -8,7 +8,7 @@
 		<listener class-name="com.actitime.qa.extentreportlistener.ExtentReporterNG" />
 	</listeners>
 
-   <test name = "UCSC Test Automation Demo Testcases">
+   <test name = "Test cases">
       <classes>
          <class name = "com.actitime.qa.testcases.HomePageTest" />
          <class name = "com.actitime.qa.testcases.LogonPageTest" />
