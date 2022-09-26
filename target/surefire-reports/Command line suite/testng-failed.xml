@@ -3,9 +3,18 @@
 <suite name="Failed suite [Command line suite]" verbose="0">
   <test thread-count="5" name="Command line test(failed)" verbose="0">
     <classes>
+      <class name="com.actitime.qa.testcases.LogonPageTest">
+        <methods>
+          <include name="loginPageLogoTest"/>
+          <include name="LoginTest"/>
+          <include name="seup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.actitime.qa.testcases.LogonPageTest -->
       <class name="com.actitime.qa.testcases.HomePageTest">
         <methods>
           <include name="homePageTaskLinkTest"/>
+          <include name="homePageLogoTest"/>
           <include name="seup"/>
           <include name="tearDown"/>
         </methods>

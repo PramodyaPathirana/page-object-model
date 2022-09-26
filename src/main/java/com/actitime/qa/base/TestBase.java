@@ -41,17 +41,10 @@ public class TestBase {
 String browserName = properties.getProperty("browser");
 		
 		if(browserName.equals("chrome")){
-			System.setProperty("webdriver.chrome.driver", "//Users//methuliakithma//Documents//Trainings//UCSC//chromedriver");	
+			System.setProperty("webdriver.chrome.driver", "C://Users//Pramodya Pathirana//Documents//GitHub//page-object-model//chromedriver.exe");	
 			driver = new ChromeDriver(); 
 		}
-		else if(browserName.equals("Firefox")){
-			//System.setProperty("webdriver.gecko.driver", "//Users//methuliakithma//Documents//Trainings//UCSC//");	
-			driver = new FirefoxDriver(); 
-		}
-		else if (browserName.equals("IE")){
-			
-			//code for IE Driver
-		}
+		
 		
 		e_driver = new EventFiringWebDriver(driver);
 		// Now create object of EventListerHandler to register it with EventFiringWebDriver
