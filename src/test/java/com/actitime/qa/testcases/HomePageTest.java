@@ -13,9 +13,9 @@ public class HomePageTest extends TestBase{
 
 	LoginPage loginPage;
 	HomePage homePage;
+	
 	public HomePageTest() {
-		super();
-		
+		super();	
 	}
 	
 	
@@ -24,34 +24,34 @@ public class HomePageTest extends TestBase{
 		initialization();
 		loginPage = new LoginPage();
 		homePage = loginPage.loging(properties.getProperty("username"), properties.getProperty("password"));
-		
-		
 	}
 	
 	
 	@Test(priority = 1)
 	public void homePageLogoTest() {
-		
 	boolean flag= homePage.validateActiTimeLogo();
-	Assert.assertTrue(flag,"Cannot find the Logo");
-		
+	Assert.assertTrue(flag,"Cannot find the Logo");	
 	}
 	
+	@Test(priority = 1)
+	public void goToApproveTimeTrack() {
+	boolean flag= homePage.goToApproveTimeTrack();
+	Assert.assertTrue(flag);	
+	}
 	
 	@Test(priority = 2)
 	public void homePageTaskLinkTest() {
-		
 	homePage.clickOnTaskLink();
-
-		
+	}
+	
+	@Test(priority = 2)
+	public void homePageUsersLinkTest() {
+	homePage.clickOnUsersLink();
 	}
 	
 	@AfterMethod
 	public void tearDown() {
-		
 		driver.quit();
 	}
-	
-	
 	
 }

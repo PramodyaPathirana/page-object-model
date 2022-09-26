@@ -4,11 +4,9 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
-
 import com.actitime.qa.base.TestBase;
 import com.actitime.qa.pages.HomePage;
 import com.actitime.qa.pages.LoginPage;
-import com.actitime.qa.pages.ReportsPage;
 import com.actitime.qa.pages.UsersPage;
 
 public class UsersPageTest extends TestBase{
@@ -27,7 +25,7 @@ public class UsersPageTest extends TestBase{
 		initialization();
 		loginPage = new LoginPage();
 		homePage = loginPage.loging(properties.getProperty("username"), properties.getProperty("password"));
-//		homePage.clickOnUsersLink();
+		homePage.clickOnUsersLink();
 		usersPage = new UsersPage();
 	}
 	
@@ -35,12 +33,11 @@ public class UsersPageTest extends TestBase{
 	public void usersPageLogoTest() {		
 	boolean flag= usersPage.validateActiTimeLogo();
 	Assert.assertTrue(flag,"Cannot find the Logo");
-		
 	}
 	
 	@Test(priority = 2)
-	public void reportsPageNewReportTest() {		
-	boolean flag= usersPage.addUser();
+	public void openUserProfile() {		
+	boolean flag= usersPage.openUserProfile();
 	Assert.assertTrue(flag);
 	}
 	

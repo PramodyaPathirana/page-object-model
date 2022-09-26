@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Command_line_suite" class="navigator-link">
-              <span class="suite-name border-failed">Command line suite</span>
+              <span class="suite-name border-passed">Command line suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">9 methods, 1 failed,   8 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods failed suite-Command_line_suite"> (hide)</a> <!-- hide-methods failed suite-Command_line_suite -->
-                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods failed suite-Command_line_suite"> (show)</a> <!-- show-methods failed suite-Command_line_suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Command_line_suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="com.actitime.qa.testcases.UsersPageTest" class="method navigator-link" hash-for-method="reportsPageNewReportTest">reportsPageNewReportTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Command_line_suite -->
+                    <span class="method-stats">11 methods,   11 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -116,12 +102,17 @@
                     <div class="method-list-content passed suite-Command_line_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.actitime.qa.testcases.LogonPageTest" class="method navigator-link" hash-for-method="LoginTest(trainee, trainee)">LoginTest(trainee, trainee)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Command_line_suite" title="com.actitime.qa.testcases.LogonPageTest" class="method navigator-link" hash-for-method="LoginTest(admin, manager)">LoginTest(admin, manager)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="com.actitime.qa.testcases.LogonPageTest" class="method navigator-link" hash-for-method="LoginTest(trainee, trainee)">LoginTest(trainee, trainee)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.actitime.qa.testcases.HomePageTest" class="method navigator-link" hash-for-method="goToApproveTimeTrack">goToApproveTimeTrack</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -136,7 +127,17 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.actitime.qa.testcases.HomePageTest" class="method navigator-link" hash-for-method="homePageUsersLinkTest">homePageUsersLinkTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Command_line_suite" title="com.actitime.qa.testcases.LogonPageTest" class="method navigator-link" hash-for-method="loginPageLogoTest">loginPageLogoTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.actitime.qa.testcases.UsersPageTest" class="method navigator-link" hash-for-method="openUserProfile">openUserProfile</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -166,56 +167,19 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Command_line_suite" class="panel Command_line_suite">
-          <div class="suite-Command_line_suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.actitime.qa.testcases.UsersPageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="reportsPageNewReportTest">
-                  </a> <!-- reportsPageNewReportTest -->
-                  <span class="method-name">reportsPageNewReportTest</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;pageBody&quot;]/tbody/tr[1]/td[3]/div/div[3]/div[1]&quot;}
-  (Session info: chrome=105.0.5195.127)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;PRAMODYA&apos;, ip: &apos;192.168.8.102&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.127, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\PRAMOD~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61216}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: b5359215f4d299480a01a1697b6b4ff2
-*** Element info: {Using=xpath, value=//*[@id=&quot;pageBody&quot;]/tbody/tr[1]/td[3]/div/div[3]/div[1]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
-	at jdk.proxy2/jdk.proxy2.$Proxy8.findElement(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
-	at com.actitime.qa.pages.UsersPage.addUser(UsersPage.java:32)
-	at com.actitime.qa.testcases.UsersPageTest.reportsPageNewReportTest(UsersPageTest.java:43)
-... Removed 43 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Command_line_suite-class-failed -->
           <div class="suite-Command_line_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">com.actitime.qa.testcases.UsersPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="openUserProfile">
+                  </a> <!-- openUserProfile -->
+                  <span class="method-name">openUserProfile</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="usersPageLogoTest">
@@ -233,14 +197,6 @@ Session ID: b5359215f4d299480a01a1697b6b4ff2
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="LoginTest(admin, manager)">
-                  </a> <!-- LoginTest(admin, manager) -->
-                  <span class="method-name">LoginTest</span>
-                  <span class="parameters">(admin, manager)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="LoginTest(trainee, trainee)">
                   </a> <!-- LoginTest(trainee, trainee) -->
                   <span class="method-name">LoginTest</span>
@@ -249,9 +205,53 @@ Session ID: b5359215f4d299480a01a1697b6b4ff2
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="LoginTest(admin, manager)">
+                  </a> <!-- LoginTest(admin, manager) -->
+                  <span class="method-name">LoginTest</span>
+                  <span class="parameters">(admin, manager)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="loginPageLogoTest">
                   </a> <!-- loginPageLogoTest -->
                   <span class="method-name">loginPageLogoTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.actitime.qa.testcases.HomePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="goToApproveTimeTrack">
+                  </a> <!-- goToApproveTimeTrack -->
+                  <span class="method-name">goToApproveTimeTrack</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="homePageLogoTest">
+                  </a> <!-- homePageLogoTest -->
+                  <span class="method-name">homePageLogoTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="homePageTaskLinkTest">
+                  </a> <!-- homePageTaskLinkTest -->
+                  <span class="method-name">homePageTaskLinkTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="homePageUsersLinkTest">
+                  </a> <!-- homePageUsersLinkTest -->
+                  <span class="method-name">homePageUsersLinkTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -274,28 +274,6 @@ Session ID: b5359215f4d299480a01a1697b6b4ff2
                   <a name="reportsPagenewReportTest">
                   </a> <!-- reportsPagenewReportTest -->
                   <span class="method-name">reportsPagenewReportTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Command_line_suite-class-passed -->
-          <div class="suite-Command_line_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.actitime.qa.testcases.HomePageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="homePageLogoTest">
-                  </a> <!-- homePageLogoTest -->
-                  <span class="method-name">homePageLogoTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="homePageTaskLinkTest">
-                  </a> <!-- homePageTaskLinkTest -->
-                  <span class="method-name">homePageTaskLinkTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -354,48 +332,56 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(9);
+data.addRows(11);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'reportsPageNewReportTest')
-data.setCell(0, 2, 'com.actitime.qa.testcases.UsersPageTest')
-data.setCell(0, 3, 40237);
+data.setCell(0, 1, 'homePageLogoTest')
+data.setCell(0, 2, 'com.actitime.qa.testcases.HomePageTest')
+data.setCell(0, 3, 6599);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'homePageTaskLinkTest')
+data.setCell(1, 1, 'homePageUsersLinkTest')
 data.setCell(1, 2, 'com.actitime.qa.testcases.HomePageTest')
-data.setCell(1, 3, 6811);
+data.setCell(1, 3, 6500);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'homePageLogoTest')
+data.setCell(2, 1, 'homePageTaskLinkTest')
 data.setCell(2, 2, 'com.actitime.qa.testcases.HomePageTest')
-data.setCell(2, 3, 4877);
+data.setCell(2, 3, 5511);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'usersPageLogoTest')
-data.setCell(3, 2, 'com.actitime.qa.testcases.UsersPageTest')
-data.setCell(3, 3, 4261);
+data.setCell(3, 1, 'goToApproveTimeTrack')
+data.setCell(3, 2, 'com.actitime.qa.testcases.HomePageTest')
+data.setCell(3, 3, 3842);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'reportsPagenewReportTest')
 data.setCell(4, 2, 'com.actitime.qa.testcases.ReportPageTest')
-data.setCell(4, 3, 844);
+data.setCell(4, 3, 763);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'LoginTest')
-data.setCell(5, 2, 'com.actitime.qa.testcases.LogonPageTest')
-data.setCell(5, 3, 328);
+data.setCell(5, 1, 'openUserProfile')
+data.setCell(5, 2, 'com.actitime.qa.testcases.UsersPageTest')
+data.setCell(5, 3, 424);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'LoginTest')
 data.setCell(6, 2, 'com.actitime.qa.testcases.LogonPageTest')
-data.setCell(6, 3, 301);
+data.setCell(6, 3, 340);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'loginPageLogoTest')
+data.setCell(7, 1, 'LoginTest')
 data.setCell(7, 2, 'com.actitime.qa.testcases.LogonPageTest')
-data.setCell(7, 3, 74);
+data.setCell(7, 3, 314);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'reportsPageLogoTest')
 data.setCell(8, 2, 'com.actitime.qa.testcases.ReportPageTest')
-data.setCell(8, 3, 66);
+data.setCell(8, 3, 100);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'usersPageLogoTest')
+data.setCell(9, 2, 'com.actitime.qa.testcases.UsersPageTest')
+data.setCell(9, 3, 72);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'loginPageLogoTest')
+data.setCell(10, 2, 'com.actitime.qa.testcases.LogonPageTest')
+data.setCell(10, 3, 62);
 window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 57 seconds</span>
+              <span class="suite-total-time">Total running time: 24 seconds</span>
               <div id="times-div-Command_line_suite">
               </div> <!-- times-div-Command_line_suite -->
             </div> <!-- times-div -->
@@ -427,131 +413,153 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">homePageLogoTest</span>
-                <span class="method-start">11070 ms</span>
+                <span class="method-name">goToApproveTimeTrack</span>
+                <span class="method-start">9457 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">15948 ms</span>
+                <span class="method-start">13300 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">seup</span>
+                <span class="method-start">13535 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">homePageLogoTest</span>
+                <span class="method-start">21737 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">28337 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.actitime.qa.testcases.LogonPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">seup</span>
-                <span class="method-start">16268 ms</span>
+                <span class="method-start">28703 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginPageLogoTest</span>
-                <span class="method-start">23369 ms</span>
+                <span class="method-start">36405 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">23443 ms</span>
+                <span class="method-start">36468 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.actitime.qa.testcases.ReportPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">seup</span>
-                <span class="method-start">23703 ms</span>
+                <span class="method-start">36717 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">reportsPageLogoTest</span>
-                <span class="method-start">40163 ms</span>
+                <span class="method-start">52782 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">40229 ms</span>
+                <span class="method-start">52882 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.actitime.qa.testcases.UsersPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">seup</span>
-                <span class="method-start">40500 ms</span>
+                <span class="method-start">53097 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">usersPageLogoTest</span>
-                <span class="method-start">48274 ms</span>
+                <span class="method-start">71048 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">52535 ms</span>
+                <span class="method-start">71120 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.actitime.qa.testcases.HomePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">seup</span>
-                <span class="method-start">52785 ms</span>
+                <span class="method-start">71377 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">homePageTaskLinkTest</span>
-                <span class="method-start">60768 ms</span>
+                <span class="method-name">homePageUsersLinkTest</span>
+                <span class="method-start">79868 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">67582 ms</span>
+                <span class="method-start">86369 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">seup</span>
+                <span class="method-start">86670 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">homePageTaskLinkTest</span>
+                <span class="method-start">95063 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">100574 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.actitime.qa.testcases.LogonPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">seup</span>
-                <span class="method-start">68536 ms</span>
+                <span class="method-start">101642 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">LoginTest(admin, manager)</span>
-                <span class="method-start">75506 ms</span>
+                <span class="method-start">108858 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">75834 ms</span>
+                <span class="method-start">109198 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">seup</span>
-                <span class="method-start">76124 ms</span>
+                <span class="method-start">109472 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">LoginTest(trainee, trainee)</span>
-                <span class="method-start">83023 ms</span>
+                <span class="method-start">117117 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">83324 ms</span>
+                <span class="method-start">117431 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.actitime.qa.testcases.ReportPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">seup</span>
-                <span class="method-start">83564 ms</span>
+                <span class="method-start">117664 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">reportsPagenewReportTest</span>
-                <span class="method-start">100706 ms</span>
+                <span class="method-start">133609 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">101550 ms</span>
+                <span class="method-start">134372 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.actitime.qa.testcases.UsersPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">seup</span>
-                <span class="method-start">101763 ms</span>
+                <span class="method-start">134649 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">reportsPageNewReportTest</span>
-                <span class="method-start">110101 ms</span>
+                <span class="method-name">openUserProfile</span>
+                <span class="method-start">149394 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">150342 ms</span>
+                <span class="method-start">149819 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

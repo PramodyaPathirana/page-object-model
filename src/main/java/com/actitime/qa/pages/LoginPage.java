@@ -16,26 +16,28 @@ public class LoginPage extends TestBase {
 	
 	//Page Factory - Object Repository
 	
+	//Find username by XPath
 	@FindBy(xpath = "//input[@name='username']")
 	@CacheLookup
 	WebElement userName;
 	
-	
-	
-	
+	//Find password by XPath
 	@FindBy(xpath = "//input[@type='password'and @name='pwd']")
 	WebElement passWord;
 	
+	//Find login button by XPath
 	@FindBy(xpath = "//a[@id='loginButton']")
 	WebElement loginButton;
 	
+	//Find the Keep me Logged in checkbox by XPath
 	@FindBy(xpath = "//input[@name='remember']")
 	WebElement keepmeLoggedinCheckBox;
 	
+	//Find the forgot password link by XPath
 	@FindBy(xpath = "//a[@id='toPasswordRecoveryPageLink']")
 	WebElement forgotYourPasswordLink;
 	
-	
+	//Find the logo by XPath
 	@FindBy(xpath = "//div[@class='atLogoImg']")
 	WebElement actiTimeLogo;
 	
@@ -45,8 +47,6 @@ public class LoginPage extends TestBase {
 	public LoginPage() {
 		
 		PageFactory.initElements(driver, this);
-		
-		
 		
 	}
 	

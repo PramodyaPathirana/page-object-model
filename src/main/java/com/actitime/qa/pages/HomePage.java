@@ -19,8 +19,19 @@ public class HomePage extends TestBase {
 		@FindBy(xpath = "//a[@class='content reports']")
 		WebElement reportsLink;
 		
+		@FindBy(xpath = "//a[@class='content users']")
+		WebElement usersLink;
+		
 		@FindBy(xpath = "//div[@id='logo_aT']")
 		WebElement actitimeLogo;
+		
+		@FindBy(xpath = "//*[@id=\"topnav\"]/tbody/tr[2]/td[2]/div[4]/a")
+		WebElement approveTimeTrack;
+		
+		@FindBy(xpath = "//*[@id=\"approveTTTable\"]/tbody[2]/tr[1]/td[7]/input")
+		WebElement approveDanielAll;
+		
+		
 		
 	
 		
@@ -35,9 +46,19 @@ public class HomePage extends TestBase {
 		//Action/Methods
 		
 		public Boolean validateActiTimeLogo() {
-			return actitimeLogo.isDisplayed();
+			approveTimeTrack.click();
+			if(approveTimeTrack.isDisplayed()) {
+				return true;
+			}else {
+				return false;
+			}
 		}
 		
+		//go to approveTimeTrack Page 
+		public Boolean goToApproveTimeTrack() {
+			return actitimeLogo.isDisplayed();
+		}
+
 		
 		
 		public TasksPage clickOnTaskLink() {
@@ -52,6 +73,13 @@ public class HomePage extends TestBase {
 			
 	         reportsLink.click();
 	         return new ReportsPage();
+			
+		}
+        
+        public UsersPage clickOnUsersLink() {
+			
+	         usersLink.click();
+	         return new UsersPage();
 			
 		}
 	
