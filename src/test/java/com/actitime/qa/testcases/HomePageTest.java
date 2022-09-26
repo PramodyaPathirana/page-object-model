@@ -39,6 +39,13 @@ public class HomePageTest extends TestBase{
 	Assert.assertTrue(flag);	
 	}
 	
+	@Test(priority = 1)
+	public void approveTimeTrack() {
+	boolean flag= homePage.approveTimeTrack();
+	Assert.assertTrue(flag);	
+	}
+	
+	
 	@Test(priority = 2)
 	public void homePageTaskLinkTest() {
 	homePage.clickOnTaskLink();

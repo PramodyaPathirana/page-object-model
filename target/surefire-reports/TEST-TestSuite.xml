@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="11" failures="0" name="TestSuite" time="24.542" errors="0" skipped="0">
+<testsuite tests="12" failures="0" name="TestSuite" time="61.528" errors="0" skipped="0">
   <properties>
     <property name="jansi.mode" value="force"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
@@ -26,7 +26,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:\Users\Pramodya Pathirana\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf18257428648302377629.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\Pramodya Pathirana\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf12184810743266630609.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Users\Pramodya Pathirana\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.4.v20220903-1038\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Users/Pramodya Pathirana/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.4.v20220903-1038/jre/bin/server;C:/Users/Pramodya Pathirana/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.4.v20220903-1038/jre/bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Git\cmd;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\MinGW\bin;C:\xampp\mysql\bin;C:\Program Files\Java\jdk-16.0.2\bin;C:\Program Files\ffmpeg\bin;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\Program Files\apache-maven-3.8.6\bin;C:\Users\Pramodya Pathirana\AppData\Local\Microsoft\WindowsApps;C:\Users\Pramodya Pathirana\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\heroku\bin;C:\Users\Pramodya Pathirana\AppData\Roaming\Composer\vendor\bin;C:\ProgramData\Pramodya Pathirana\GitHubDesktop\bin;C:\Users\Pramodya Pathirana\AppData\Local\GitHubDesktop\bin;C:\Users\Pramodya Pathirana\Desktop;;."/>
     <property name="jdk.debug" value="release"/>
@@ -60,15 +60,16 @@
     <property name="java.vendor.version" value="Temurin-17.0.4.1+1"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.actitime.qa.testcases.HomePageTest" name="goToApproveTimeTrack" time="3.863"/>
-  <testcase classname="com.actitime.qa.testcases.HomePageTest" name="homePageLogoTest" time="6.595"/>
-  <testcase classname="com.actitime.qa.testcases.LogonPageTest" name="loginPageLogoTest" time="0.066"/>
-  <testcase classname="com.actitime.qa.testcases.ReportPageTest" name="reportsPageLogoTest" time="0.098"/>
-  <testcase classname="com.actitime.qa.testcases.UsersPageTest" name="usersPageLogoTest" time="0.066"/>
-  <testcase classname="com.actitime.qa.testcases.HomePageTest" name="homePageUsersLinkTest" time="6.501"/>
-  <testcase classname="com.actitime.qa.testcases.HomePageTest" name="homePageTaskLinkTest" time="5.51"/>
-  <testcase classname="com.actitime.qa.testcases.LogonPageTest" name="LoginTest" time="0.337"/>
-  <testcase classname="com.actitime.qa.testcases.LogonPageTest" name="LoginTest" time="0.315"/>
-  <testcase classname="com.actitime.qa.testcases.ReportPageTest" name="reportsPagenewReportTest" time="0.764"/>
-  <testcase classname="com.actitime.qa.testcases.UsersPageTest" name="openUserProfile" time="0.427"/>
+  <testcase classname="com.actitime.qa.testcases.HomePageTest" name="approveTimeTrack" time="36.467"/>
+  <testcase classname="com.actitime.qa.testcases.HomePageTest" name="goToApproveTimeTrack" time="6.353"/>
+  <testcase classname="com.actitime.qa.testcases.HomePageTest" name="homePageLogoTest" time="3.703"/>
+  <testcase classname="com.actitime.qa.testcases.LogonPageTest" name="loginPageLogoTest" time="0.055"/>
+  <testcase classname="com.actitime.qa.testcases.ReportPageTest" name="reportsPageLogoTest" time="0.06"/>
+  <testcase classname="com.actitime.qa.testcases.UsersPageTest" name="usersPageLogoTest" time="0.055"/>
+  <testcase classname="com.actitime.qa.testcases.HomePageTest" name="homePageUsersLinkTest" time="6.464"/>
+  <testcase classname="com.actitime.qa.testcases.HomePageTest" name="homePageTaskLinkTest" time="6.341"/>
+  <testcase classname="com.actitime.qa.testcases.LogonPageTest" name="LoginTest" time="0.42"/>
+  <testcase classname="com.actitime.qa.testcases.LogonPageTest" name="LoginTest" time="0.355"/>
+  <testcase classname="com.actitime.qa.testcases.ReportPageTest" name="reportsPagenewReportTest" time="0.818"/>
+  <testcase classname="com.actitime.qa.testcases.UsersPageTest" name="openUserProfile" time="0.437"/>
 </testsuite>

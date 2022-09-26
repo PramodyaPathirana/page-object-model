@@ -46,6 +46,11 @@ public class HomePage extends TestBase {
 		//Action/Methods
 		
 		public Boolean validateActiTimeLogo() {
+			return actitimeLogo.isDisplayed();
+		}
+		
+		//go to approveTimeTrack Page 
+		public Boolean goToApproveTimeTrack() {
 			approveTimeTrack.click();
 			if(approveTimeTrack.isDisplayed()) {
 				return true;
@@ -54,12 +59,17 @@ public class HomePage extends TestBase {
 			}
 		}
 		
-		//go to approveTimeTrack Page 
-		public Boolean goToApproveTimeTrack() {
-			return actitimeLogo.isDisplayed();
+		//approve leave if not already approved
+		public Boolean approveTimeTrack() {
+			if (approveDanielAll.isSelected()) {
+				return true;
+			}else if(!approveDanielAll.isSelected()) {
+				approveDanielAll.click();
+				return true;
+			}else {
+				return false;
+			}
 		}
-
-		
 		
 		public TasksPage clickOnTaskLink() {
 			
